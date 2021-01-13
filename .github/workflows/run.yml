@@ -23,7 +23,7 @@ on:
 jobs:
   run-it:
     environment:
-        name: freenom
+      name: freenom
     runs-on: ubuntu-18.04
     name: Run it on action
     steps:
