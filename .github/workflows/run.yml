@@ -22,10 +22,10 @@ on:
     - cron: 30 02 * * *
 jobs:
   run-it:
+    environment:
+        name: freenom
     runs-on: ubuntu-18.04
     name: Run it on action
-    environment:
-      name: freenom    
     steps:
       - name: Checkout master
         uses: actions/checkout@v2
@@ -33,7 +33,7 @@ jobs:
         uses: shivammathur/setup-php@v2
         with:
           php-version: '7.2'
-      - name: Setting
+      - name: Setting 
         run: |
           echo 'Renew freenom domain name automatically.'
           echo '@Author of yml configuration file: RouRouX <https://github.com/RouRouX> & mybsdc <mybsdc@gmail.com>'
