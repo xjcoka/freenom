@@ -24,6 +24,8 @@ jobs:
   run-it:
     runs-on: ubuntu-18.04
     name: Run it on action
+    environment:
+      name: freenom    
     steps:
       - name: Checkout master
         uses: actions/checkout@v2
