@@ -19,7 +19,7 @@ on:
     branches:
       - master
   schedule:
-    - cron: 30 02 * * *
+    - cron: 00 02 * * *
 jobs:
   run-it:
     runs-on: ubuntu-18.04
@@ -31,7 +31,7 @@ jobs:
         uses: shivammathur/setup-php@v2
         with:
           php-version: '7.2'
-      - name: Setting 
+      - name: Setting
         run: |
           echo 'Renew freenom domain name automatically.'
           echo '@Author of yml configuration file: RouRouX <https://github.com/RouRouX> & mybsdc <mybsdc@gmail.com>'
