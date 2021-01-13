@@ -22,7 +22,6 @@ on:
     - cron: 00 02 * * *
 jobs:
   run-it:
-    environment: freenom
     runs-on: ubuntu-18.04
     name: Run it on action
     steps:
