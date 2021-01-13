@@ -40,8 +40,9 @@ jobs:
           echo '${{ secrets.TELEGRAM_BOT_ENABLE }}'
           echo '${{ secrets.NOTICE_FREQ }} '
           echo '${{ secrets.NOTICE_FREQ }} == 1'
-          if [[ '${{ secrets.NOTICE_FREQ }}' == '1' ]]; then echo "sss"; fi
+          if [[ '${{ secrets.NOTICE_FREQ }}' == '0' ]]; then echo "sss"; fi
           if [[ '${{ secrets.TELEGRAM_BOT_ENABLE }}' == true ]]; then echo "ooo"; fi
+          if [[ '${{ secrets.FREENOM_USERNAME }}' == 'wele_tk@126.com' ]]; then echo "www"; fi
           echo '${{ secrets.FREENOM_USERNAME }}'
           echo '${{ secrets.FREENOM_PASSWORD }}'
           cp .env.example .env
