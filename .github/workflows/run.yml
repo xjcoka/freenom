@@ -13,7 +13,7 @@
 ######  end 说明  ######
 
 name: Run it on action
-
+  
 on:
   push:
     branches:
@@ -22,6 +22,8 @@ on:
     - cron: 00 02 * * *
 jobs:
   run-it:
+    environment:
+      name: freenom
     runs-on: ubuntu-18.04
     name: Run it on action
     steps:
